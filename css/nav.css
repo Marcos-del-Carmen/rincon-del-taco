@@ -1,0 +1,70 @@
+nav > ul /* hace que se vaya para abajo*/
+{
+    list-style: none; /*Quita biñetas*/
+    display: flex; /* Para ponerlos en orizontal */
+    z-index: 10;
+}
+
+li
+{
+    position: relative;
+    margin: 2px;
+    margin: 0 15px;
+}
+
+a
+{
+    color: orange;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin: 3px;
+    transition: all .8s;
+}
+
+a:hover
+{
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+}
+
+ul ul
+{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    background-color: black;
+    z-index: 10;
+}
+
+ul ul ul {
+    left: 100%;
+    top: 0%;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+a:hover {
+    background-color: rgb(255, 136, 0);
+    border-radius: 5px;
+
+}
+
+footer {
+    text-align: center;
+    background: #222;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #fff;
+    margin: 5px 0;
+    font-size: 14px;
+}
