@@ -1,0 +1,173 @@
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #000000;
+    text-align: center;
+}
+
+header
+{
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    text-align: center;
+    color: orange;
+    margin: 0px 0px 10px 0px;
+}
+
+.nosotros
+{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.contenedor
+{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.tarjeta
+{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px blue;
+}
+
+footer {
+    padding: 0px; /* Reduce el padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: gray;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+footer p {
+    font-size: 12px; /* Reduce el tamaño de la fuente */
+    margin: 0; /* Elimina los márgenes para que el texto ocupe menos espacio */
+}
+
+/* Menu */
+nav
+{
+    margin: 0%;
+    padding: 0%;
+    position: fixed;
+}
+
+nav > ul /* hace que se vaya para abajo*/
+{
+    list-style: none; /*Quita biñetas*/
+    display: flex; /* Para ponerlos en orizontal */
+}
+
+li
+{
+    position: relative;
+    margin: 2px;
+    margin: 0 15px;
+}
+
+a
+{
+    color: orange;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    margin: 3px;
+}
+
+a:hover
+{
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+}
+
+ul ul
+{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    background-color: black;
+}
+
+ul ul ul
+{
+    left: 100%;
+    top: 0%;
+}
+
+li:hover > ul
+{
+    display: block;
+}
+
+a:hover
+{
+    background-color: aqua;
+    border-radius: 5px;
+
+}
+/*Fin menu*/
+
+@media (max-width:1024px) 
+{
+    header
+    {
+        color: aqua;
+    }
+    .tarjeta
+    {
+        flex: 1 1 calc(50%-20px);
+    }    
+}
+
+@media (max-width: 768px)
+{
+    header
+    {
+        color: black;
+    }
+    nav a
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px 15px;
+    }
+    .tarjeta
+    {
+        flex: 1 1 100%;
+    }
+    footer
+    {
+        position: relative;
+    }
+}
+
+@media (max-width: 600px)
+{
+    header
+    {
+        font-size: 18px;
+        padding: 15px;
+        color: blueviolet;
+    }
+}
+
+
